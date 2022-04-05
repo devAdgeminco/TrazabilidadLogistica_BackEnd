@@ -1,0 +1,20 @@
+E:\Dev\Desarrollos\Sistema de Movilidades\BackEnd\APIRestFull\Core\bin\Debug\netcoreapp3.1\Core.deps.json
+E:\Dev\Desarrollos\Sistema de Movilidades\BackEnd\APIRestFull\Core\bin\Debug\netcoreapp3.1\Core.dll
+E:\Dev\Desarrollos\Sistema de Movilidades\BackEnd\APIRestFull\Core\bin\Debug\netcoreapp3.1\Core.pdb
+E:\Dev\Desarrollos\Sistema de Movilidades\BackEnd\APIRestFull\Core\obj\Debug\netcoreapp3.1\Core.csproj.AssemblyReference.cache
+E:\Dev\Desarrollos\Sistema de Movilidades\BackEnd\APIRestFull\Core\obj\Debug\netcoreapp3.1\Core.GeneratedMSBuildEditorConfig.editorconfig
+E:\Dev\Desarrollos\Sistema de Movilidades\BackEnd\APIRestFull\Core\obj\Debug\netcoreapp3.1\Core.AssemblyInfoInputs.cache
+E:\Dev\Desarrollos\Sistema de Movilidades\BackEnd\APIRestFull\Core\obj\Debug\netcoreapp3.1\Core.AssemblyInfo.cs
+E:\Dev\Desarrollos\Sistema de Movilidades\BackEnd\APIRestFull\Core\obj\Debug\netcoreapp3.1\Core.csproj.CoreCompileInputs.cache
+E:\Dev\Desarrollos\Sistema de Movilidades\BackEnd\APIRestFull\Core\obj\Debug\netcoreapp3.1\Core.dll
+E:\Dev\Desarrollos\Sistema de Movilidades\BackEnd\APIRestFull\Core\obj\Debug\netcoreapp3.1\Core.pdb
+E:\Dev\Adgeminco\Trazabilidad Logistica\BackEnd\APIRestFull\Core\bin\Debug\netcoreapp3.1\Core.deps.json
+E:\Dev\Adgeminco\Trazabilidad Logistica\BackEnd\APIRestFull\Core\bin\Debug\netcoreapp3.1\Core.dll
+E:\Dev\Adgeminco\Trazabilidad Logistica\BackEnd\APIRestFull\Core\bin\Debug\netcoreapp3.1\Core.pdb
+E:\Dev\Adgeminco\Trazabilidad Logistica\BackEnd\APIRestFull\Core\obj\Debug\netcoreapp3.1\Core.csproj.AssemblyReference.cache
+E:\Dev\Adgeminco\Trazabilidad Logistica\BackEnd\APIRestFull\Core\obj\Debug\netcoreapp3.1\Core.GeneratedMSBuildEditorConfig.editorconfig
+E:\Dev\Adgeminco\Trazabilidad Logistica\BackEnd\APIRestFull\Core\obj\Debug\netcoreapp3.1\Core.AssemblyInfoInputs.cache
+E:\Dev\Adgeminco\Trazabilidad Logistica\BackEnd\APIRestFull\Core\obj\Debug\netcoreapp3.1\Core.AssemblyInfo.cs
+E:\Dev\Adgeminco\Trazabilidad Logistica\BackEnd\APIRestFull\Core\obj\Debug\netcoreapp3.1\Core.csproj.CoreCompileInputs.cache
+E:\Dev\Adgeminco\Trazabilidad Logistica\BackEnd\APIRestFull\Core\obj\Debug\netcoreapp3.1\Core.dll
+E:\Dev\Adgeminco\Trazabilidad Logistica\BackEnd\APIRestFull\Core\obj\Debug\netcoreapp3.1\Core.pdb
