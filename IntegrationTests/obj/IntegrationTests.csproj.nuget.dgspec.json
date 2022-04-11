@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Dev\\Adgeminco\\Trazabilidad Logistica\\BackEnd\\APIRestFull\\IntegrationTests\\IntegrationTests.csproj": {}
+    "E:\\Dev\\Adgeminco\\Trazabilidad Logistica\\BackEnd\\APIRestFull\\TrazabilidadLogistica_BackEnd\\IntegrationTests\\IntegrationTests.csproj": {}
   },
   "projects": {
-    "E:\\Dev\\Adgeminco\\Trazabilidad Logistica\\BackEnd\\APIRestFull\\IntegrationTests\\IntegrationTests.csproj": {
+    "E:\\Dev\\Adgeminco\\Trazabilidad Logistica\\BackEnd\\APIRestFull\\TrazabilidadLogistica_BackEnd\\IntegrationTests\\IntegrationTests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Dev\\Adgeminco\\Trazabilidad Logistica\\BackEnd\\APIRestFull\\IntegrationTests\\IntegrationTests.csproj",
+        "projectUniqueName": "E:\\Dev\\Adgeminco\\Trazabilidad Logistica\\BackEnd\\APIRestFull\\TrazabilidadLogistica_BackEnd\\IntegrationTests\\IntegrationTests.csproj",
         "projectName": "IntegrationTests",
-        "projectPath": "E:\\Dev\\Adgeminco\\Trazabilidad Logistica\\BackEnd\\APIRestFull\\IntegrationTests\\IntegrationTests.csproj",
+        "projectPath": "E:\\Dev\\Adgeminco\\Trazabilidad Logistica\\BackEnd\\APIRestFull\\TrazabilidadLogistica_BackEnd\\IntegrationTests\\IntegrationTests.csproj",
         "packagesPath": "C:\\Users\\Luan\\.nuget\\packages\\",
-        "outputPath": "E:\\Dev\\Adgeminco\\Trazabilidad Logistica\\BackEnd\\APIRestFull\\IntegrationTests\\obj\\",
+        "outputPath": "E:\\Dev\\Adgeminco\\Trazabilidad Logistica\\BackEnd\\APIRestFull\\TrazabilidadLogistica_BackEnd\\IntegrationTests\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Luan\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6Z39VAKfSBxLXt2enkANZDiWrzkRsKORCSl8EA3gHvui94WMX9zmKEq8+gDQoFiNnH0bcw6X+MMjg0FO9wRuoA==",
+  "dgSpecHash": "/ONoxoVZeccdRSfUhVb1FMaZ8+MKD3gwxa+RtjUq9v7eINGq76DZ3rnbJ8Ja2dO/ySOQzt4amIITklmdCADcug==",
   "success": true,
-  "projectFilePath": "E:\\Dev\\Adgeminco\\Trazabilidad Logistica\\BackEnd\\APIRestFull\\Api\\Api.csproj",
+  "projectFilePath": "E:\\Dev\\Adgeminco\\Trazabilidad Logistica\\BackEnd\\APIRestFull\\TrazabilidadLogistica_BackEnd\\Api\\Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Luan\\.nuget\\packages\\dapper\\2.0.90\\dapper.2.0.90.nupkg.sha512",
     "C:\\Users\\Luan\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\3.1.23\\microsoft.aspnetcore.authentication.jwtbearer.3.1.23.nupkg.sha512",

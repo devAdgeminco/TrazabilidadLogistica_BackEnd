@@ -5780,11 +5780,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Dev\\Adgeminco\\Trazabilidad Logistica\\BackEnd\\APIRestFull\\Infrastructure\\Infrastructure.csproj",
+      "projectUniqueName": "E:\\Dev\\Adgeminco\\Trazabilidad Logistica\\BackEnd\\APIRestFull\\TrazabilidadLogistica_BackEnd\\Infrastructure\\Infrastructure.csproj",
       "projectName": "Infrastructure",
-      "projectPath": "E:\\Dev\\Adgeminco\\Trazabilidad Logistica\\BackEnd\\APIRestFull\\Infrastructure\\Infrastructure.csproj",
+      "projectPath": "E:\\Dev\\Adgeminco\\Trazabilidad Logistica\\BackEnd\\APIRestFull\\TrazabilidadLogistica_BackEnd\\Infrastructure\\Infrastructure.csproj",
       "packagesPath": "C:\\Users\\Luan\\.nuget\\packages\\",
-      "outputPath": "E:\\Dev\\Adgeminco\\Trazabilidad Logistica\\BackEnd\\APIRestFull\\Infrastructure\\obj\\",
+      "outputPath": "E:\\Dev\\Adgeminco\\Trazabilidad Logistica\\BackEnd\\APIRestFull\\TrazabilidadLogistica_BackEnd\\Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Luan\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -5801,8 +5801,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "E:\\Dev\\Adgeminco\\Trazabilidad Logistica\\BackEnd\\APIRestFull\\Core\\Core.csproj": {
-              "projectPath": "E:\\Dev\\Adgeminco\\Trazabilidad Logistica\\BackEnd\\APIRestFull\\Core\\Core.csproj"
+            "E:\\Dev\\Adgeminco\\Trazabilidad Logistica\\BackEnd\\APIRestFull\\TrazabilidadLogistica_BackEnd\\Core\\Core.csproj": {
+              "projectPath": "E:\\Dev\\Adgeminco\\Trazabilidad Logistica\\BackEnd\\APIRestFull\\TrazabilidadLogistica_BackEnd\\Core\\Core.csproj"
             }
           }
         }

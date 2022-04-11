@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4jilZ+zIWtX3YYXekewYmfRxmwJhgzjkHqvIEBroWW0eRy1P71Bls012ma7o3a6GDwO60p5f72ZJrxj2iNLA1w==",
+  "dgSpecHash": "LbnHER2+pRqdyihu0910GsrEnX95rzKYc+fntgR6K0hnhWiL03wUFR52i5qw/qZi5R6v/Uwl/F4OJVo6XtQFHA==",
   "success": true,
-  "projectFilePath": "E:\\Dev\\Adgeminco\\Trazabilidad Logistica\\BackEnd\\APIRestFull\\Infrastructure\\Infrastructure.csproj",
+  "projectFilePath": "E:\\Dev\\Adgeminco\\Trazabilidad Logistica\\BackEnd\\APIRestFull\\TrazabilidadLogistica_BackEnd\\Infrastructure\\Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Luan\\.nuget\\packages\\dapper\\2.0.90\\dapper.2.0.90.nupkg.sha512",
     "C:\\Users\\Luan\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
