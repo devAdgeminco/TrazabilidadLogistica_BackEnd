@@ -9,6 +9,6 @@ namespace Core.Interfaces
     public interface IUserRepository
     {
         Task<IEnumerable<dynamic>> GetUsers();
-        Task<IEnumerable<dynamic>> GetUser(string login, int CodEmpresa);
+        Task<IEnumerable<dynamic>> GetUser(string login, string CodEmpresa);
     }
 }

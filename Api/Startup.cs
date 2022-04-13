@@ -39,8 +39,11 @@ namespace Api
                                          }); 
             services.AddControllers();
 
+            services.AddControllers().AddNewtonsoftJson();
+
             services.AddTransient<IUserRepository, UserRepository>();
             services.AddTransient<ICompanyRepository, CompanyRepository>();
+            services.AddTransient<IRequerimientoRepository, RequerimientoRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -50,10 +53,12 @@ namespace Api
             {
                 app.UseDeveloperExceptionPage();
             }
+
             app.UseCors(x => x
-            .AllowAnyOrigin()
-            .AllowAnyMethod()
-            .AllowAnyHeader());
+                .AllowAnyOrigin()
+                .AllowAnyMethod()
+                .AllowAnyHeader());
+
             app.UseHttpsRedirection();
 
             app.UseRouting();

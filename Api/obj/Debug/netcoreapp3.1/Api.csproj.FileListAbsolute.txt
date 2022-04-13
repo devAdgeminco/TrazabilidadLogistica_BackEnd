@@ -199,3 +199,6 @@ E:\Dev\Adgeminco\Trazabilidad Logistica\BackEnd\APIRestFull\TrazabilidadLogistic
 E:\Dev\Adgeminco\Trazabilidad Logistica\BackEnd\APIRestFull\TrazabilidadLogistica_BackEnd\Api\obj\Debug\netcoreapp3.1\Api.dll
 E:\Dev\Adgeminco\Trazabilidad Logistica\BackEnd\APIRestFull\TrazabilidadLogistica_BackEnd\Api\obj\Debug\netcoreapp3.1\Api.pdb
 E:\Dev\Adgeminco\Trazabilidad Logistica\BackEnd\APIRestFull\TrazabilidadLogistica_BackEnd\Api\obj\Debug\netcoreapp3.1\Api.genruntimeconfig.cache
+E:\Dev\Adgeminco\Trazabilidad Logistica\BackEnd\APIRestFull\TrazabilidadLogistica_BackEnd\Api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.JsonPatch.dll
+E:\Dev\Adgeminco\Trazabilidad Logistica\BackEnd\APIRestFull\TrazabilidadLogistica_BackEnd\Api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+E:\Dev\Adgeminco\Trazabilidad Logistica\BackEnd\APIRestFull\TrazabilidadLogistica_BackEnd\Api\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll

@@ -28,7 +28,7 @@ namespace Api.Controllers
         }
 
         [HttpPost("login")]
-        public async Task<IActionResult> Login([FromForm]string login, [FromForm]int CodEmpresa)
+        public async Task<IActionResult> Login([FromForm]string login, [FromForm]string CodEmpresa)
         {
             var users = await _userRepository.GetUser(login, CodEmpresa);
 
