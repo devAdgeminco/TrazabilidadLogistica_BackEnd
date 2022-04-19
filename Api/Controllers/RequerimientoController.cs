@@ -38,5 +38,33 @@ namespace Api.Controllers
             var requerimientoDetalle = await _requerimientoRepository.GetRequerimientoDetalle(requerimiento.idReq);
             return Ok(new { requerimientoDetalle = requerimientoDetalle });
         }
+
+        [HttpPost("getOrdenCompra")]
+        public async Task<IActionResult> getOrdenCompra([FromForm] DateTime fecIni, [FromForm] DateTime fecFin)
+        {
+            var ordenCompra = await _requerimientoRepository.getOrdenCompra(fecIni, fecFin);
+            return Ok(new { ordenCompra = ordenCompra });
+        }
+
+        [HttpPost("getOrdenCompraDetalle")]
+        public async Task<IActionResult> getOrdenCompraDetalle([FromBody]OrdenCompra oCompra)
+        {
+            var ordenCompra = await _requerimientoRepository.getOrdenCompraDetalle(oCompra.id);
+            return Ok(new { ordenCompra = ordenCompra });
+        }
+
+        [HttpPost("getPartesEntrada")]
+        public async Task<IActionResult> getPartesEntrada([FromForm] DateTime fecIni, [FromForm] DateTime fecFin)
+        {
+            var partesEntrada = await _requerimientoRepository.getPartesEntrada(fecIni, fecFin);
+            return Ok(new { partesEntrada = partesEntrada });
+        }
+
+        [HttpPost("getPartesEntradaDetalle")]
+        public async Task<IActionResult> getPartesEntradaDetalle([FromBody] ParteEntrada pEntrada)
+        {
+            var parteEntraDetalle = await _requerimientoRepository.getPartesEntradaDetalle(pEntrada.id);
+            return Ok(new { parteEntraDetalle = parteEntraDetalle });
+        }
     }
 }

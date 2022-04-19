@@ -30,5 +30,28 @@ namespace Infrastructure.Repositories
             return await connection.QueryAsync("usp_GetRequerimientoDetalle", param: new { idReq = idReq }, commandType: CommandType.StoredProcedure);
         }
 
+        public async Task<IEnumerable<dynamic>> getOrdenCompra(DateTime fecIni, DateTime fecFin)
+        {
+            using var connection = new SqlConnection(ConnectionString);
+            return await connection.QueryAsync("usp_GetOrdenCompra", param: new { fecIni = fecIni, fecFin = fecFin }, commandType: CommandType.StoredProcedure);
+        }
+
+        public async Task<IEnumerable<dynamic>> getOrdenCompraDetalle(string id)
+        {
+            using var connection = new SqlConnection(ConnectionString);
+            return await connection.QueryAsync("usp_GetOrdenCompraDetalle", param: new { id = id }, commandType: CommandType.StoredProcedure);
+        }
+
+        public async Task<IEnumerable<dynamic>> getPartesEntrada(DateTime fecIni, DateTime fecFin)
+        {
+            using var connection = new SqlConnection(ConnectionString);
+            return await connection.QueryAsync("usp_GetPartesEntrada", param: new { fecIni = fecIni, fecFin = fecFin }, commandType: CommandType.StoredProcedure);
+        }
+
+        public async Task<IEnumerable<dynamic>> getPartesEntradaDetalle(string id)
+        {
+            using var connection = new SqlConnection(ConnectionString);
+            return await connection.QueryAsync("usp_GetPartesEntradaDetalle", param: new { id = id }, commandType: CommandType.StoredProcedure);
+        }
     }
 }
