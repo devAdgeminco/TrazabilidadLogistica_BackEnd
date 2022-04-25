@@ -15,7 +15,7 @@ namespace Infrastructure.Repositories
         private readonly string ConnectionString;
         public CompanyRepository(IConfiguration configuration)
         {
-            ConnectionString = ConfigurationExtensions.GetConnectionString(configuration, "BDMovilidad");
+            ConnectionString = ConfigurationExtensions.GetConnectionString(configuration, "BDADGintegra");
         }
 
         public async Task<IEnumerable<dynamic>> GetCompanies()

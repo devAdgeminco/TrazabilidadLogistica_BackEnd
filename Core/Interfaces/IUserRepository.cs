@@ -10,5 +10,11 @@ namespace Core.Interfaces
     {
         Task<IEnumerable<dynamic>> GetUsers();
         Task<IEnumerable<dynamic>> GetUser(string login, string CodEmpresa);
+        Task<IEnumerable<dynamic>> GetUserForm(int CodUsuario);
+        Task<IEnumerable<dynamic>> InsertUser(string Login, string Nombres, string Apellidos, int CodEmpresa, string TipoUsuarioMa, string Clave, int CodUsuarioEvento);
+        Task<IEnumerable<dynamic>> UpdateUser(int CodUsuario, string Login, string Nombres, string Apellidos, int CodEmpresa, string TipoUsuarioMa, int CodUsuarioEvento);
+        Task<IEnumerable<dynamic>> DeleteUser(int CodUsuario, int CodUsuarioEvento);
+        Task<IEnumerable<dynamic>> UpdatePswdUser(int CodUsuario, string Clave);
+
     }
 }

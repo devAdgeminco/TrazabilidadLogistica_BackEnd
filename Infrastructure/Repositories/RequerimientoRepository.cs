@@ -15,7 +15,7 @@ namespace Infrastructure.Repositories
         private readonly string ConnectionString;
         public RequerimientoRepository(IConfiguration configuration)
         {
-            ConnectionString = ConfigurationExtensions.GetConnectionString(configuration, "BDRsFaccar");
+            ConnectionString = ConfigurationExtensions.GetConnectionString(configuration, "BDADGintegra");
         }
 
         public async Task<IEnumerable<dynamic>> GetRequerimientos(DateTime fecIni, DateTime fecFin)
