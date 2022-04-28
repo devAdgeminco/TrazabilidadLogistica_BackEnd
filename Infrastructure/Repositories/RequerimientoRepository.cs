@@ -23,7 +23,11 @@ namespace Infrastructure.Repositories
             using var connection = new SqlConnection(ConnectionString);
             return await connection.QueryAsync("usp_GetRequerimientos", param: new { fecIni = fecIni, fecFin = fecFin }, commandType: CommandType.StoredProcedure);
         }
-
+        public async Task<IEnumerable<dynamic>> GetRequerimiento(string nroreq)
+        {
+            using var connection = new SqlConnection(ConnectionString);
+            return await connection.QueryAsync("usp_GetRequerimiento", param: new { nroreq = nroreq }, commandType: CommandType.StoredProcedure);
+        }
         public async Task<IEnumerable<dynamic>> GetRequerimientoDetalle(string idReq)
         {
             using var connection = new SqlConnection(ConnectionString);
@@ -36,6 +40,12 @@ namespace Infrastructure.Repositories
             return await connection.QueryAsync("usp_GetOrdenCompra", param: new { fecIni = fecIni, fecFin = fecFin }, commandType: CommandType.StoredProcedure);
         }
 
+        public async Task<IEnumerable<dynamic>> getOCompra(string nroreq)
+        {
+            using var connection = new SqlConnection(ConnectionString);
+            return await connection.QueryAsync("usp_GetOCompra", param: new { nroreq = nroreq }, commandType: CommandType.StoredProcedure);
+        }
+
         public async Task<IEnumerable<dynamic>> getOrdenCompraDetalle(string id)
         {
             using var connection = new SqlConnection(ConnectionString);
@@ -46,6 +56,12 @@ namespace Infrastructure.Repositories
         {
             using var connection = new SqlConnection(ConnectionString);
             return await connection.QueryAsync("usp_GetPartesEntrada", param: new { fecIni = fecIni, fecFin = fecFin }, commandType: CommandType.StoredProcedure);
+        }
+
+        public async Task<IEnumerable<dynamic>> getParteEntrada(string nroreq)
+        {
+            using var connection = new SqlConnection(ConnectionString);
+            return await connection.QueryAsync("usp_GetParteEntrada", param: new { nroreq = nroreq }, commandType: CommandType.StoredProcedure);
         }
 
         public async Task<IEnumerable<dynamic>> getPartesEntradaDetalle(string id)

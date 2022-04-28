@@ -32,6 +32,13 @@ namespace Api.Controllers
             return Ok(new { requerimientos = requerimientos });
         }
 
+        [HttpPost("getRequerimiento")]
+        public async Task<IActionResult> getRequerimiento(Requerimiento req)
+        {
+            var requerimiento = await _requerimientoRepository.GetRequerimiento(req.idReq);
+            return Ok(new { requerimiento = requerimiento });
+        }
+
         [HttpPost("getRequerimientoDetalle")]
         public async Task<IActionResult> getRequerimientoDetalle([FromBody]Requerimiento requerimiento)
         {
@@ -46,6 +53,13 @@ namespace Api.Controllers
             return Ok(new { ordenCompra = ordenCompra });
         }
 
+        [HttpPost("getOCompra")]
+        public async Task<IActionResult> getOCompra([FromBody] Requerimiento requerimiento)
+        {
+            var oCompra = await _requerimientoRepository.getOCompra(requerimiento.idReq);
+            return Ok(new { oCompra = oCompra });
+        }
+
         [HttpPost("getOrdenCompraDetalle")]
         public async Task<IActionResult> getOrdenCompraDetalle([FromBody]OrdenCompra oCompra)
         {
@@ -58,6 +72,13 @@ namespace Api.Controllers
         {
             var partesEntrada = await _requerimientoRepository.getPartesEntrada(fecIni, fecFin);
             return Ok(new { partesEntrada = partesEntrada });
+        }
+
+        [HttpPost("getParteEntrada")]
+        public async Task<IActionResult> getParteEntrada([FromBody] Requerimiento requerimiento)
+        {
+            var parteEntrada = await _requerimientoRepository.getParteEntrada(requerimiento.idReq);
+            return Ok(new { parteEntrada = parteEntrada });
         }
 
         [HttpPost("getPartesEntradaDetalle")]

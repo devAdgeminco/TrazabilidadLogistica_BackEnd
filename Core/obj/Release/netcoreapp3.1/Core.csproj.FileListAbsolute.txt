@@ -1,0 +1,10 @@
+E:\Dev\Adgeminco\Trazabilidad Logistica\BackEnd\APIRestFull\TrazabilidadLogistica_BackEnd\Core\bin\Release\netcoreapp3.1\Core.deps.json
+E:\Dev\Adgeminco\Trazabilidad Logistica\BackEnd\APIRestFull\TrazabilidadLogistica_BackEnd\Core\bin\Release\netcoreapp3.1\Core.dll
+E:\Dev\Adgeminco\Trazabilidad Logistica\BackEnd\APIRestFull\TrazabilidadLogistica_BackEnd\Core\bin\Release\netcoreapp3.1\Core.pdb
+E:\Dev\Adgeminco\Trazabilidad Logistica\BackEnd\APIRestFull\TrazabilidadLogistica_BackEnd\Core\obj\Release\netcoreapp3.1\Core.csproj.AssemblyReference.cache
+E:\Dev\Adgeminco\Trazabilidad Logistica\BackEnd\APIRestFull\TrazabilidadLogistica_BackEnd\Core\obj\Release\netcoreapp3.1\Core.GeneratedMSBuildEditorConfig.editorconfig
+E:\Dev\Adgeminco\Trazabilidad Logistica\BackEnd\APIRestFull\TrazabilidadLogistica_BackEnd\Core\obj\Release\netcoreapp3.1\Core.AssemblyInfoInputs.cache
+E:\Dev\Adgeminco\Trazabilidad Logistica\BackEnd\APIRestFull\TrazabilidadLogistica_BackEnd\Core\obj\Release\netcoreapp3.1\Core.AssemblyInfo.cs
+E:\Dev\Adgeminco\Trazabilidad Logistica\BackEnd\APIRestFull\TrazabilidadLogistica_BackEnd\Core\obj\Release\netcoreapp3.1\Core.csproj.CoreCompileInputs.cache
+E:\Dev\Adgeminco\Trazabilidad Logistica\BackEnd\APIRestFull\TrazabilidadLogistica_BackEnd\Core\obj\Release\netcoreapp3.1\Core.dll
+E:\Dev\Adgeminco\Trazabilidad Logistica\BackEnd\APIRestFull\TrazabilidadLogistica_BackEnd\Core\obj\Release\netcoreapp3.1\Core.pdb
