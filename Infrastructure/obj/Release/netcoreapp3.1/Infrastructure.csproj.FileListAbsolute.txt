@@ -14,3 +14,19 @@ E:\Dev\Adgeminco\Trazabilidad Logistica\BackEnd\APIRestFull\TrazabilidadLogistic
 E:\Dev\Adgeminco\Trazabilidad Logistica\BackEnd\APIRestFull\TrazabilidadLogistica_BackEnd\Infrastructure\obj\Release\netcoreapp3.1\Infrastructure.dll
 E:\Dev\Adgeminco\Trazabilidad Logistica\BackEnd\APIRestFull\TrazabilidadLogistica_BackEnd\Infrastructure\obj\Release\netcoreapp3.1\Infrastructure.pdb
 E:\Dev\Adgeminco\Trazabilidad Logistica\BackEnd\APIRestFull\TrazabilidadLogistica_BackEnd\Infrastructure\obj\Release\netcoreapp3.1\Infrastructure.genruntimeconfig.cache
+C:\GitHub\TrazabilidadLogistica_BackEnd\Infrastructure\bin\Release\netcoreapp3.1\Infrastructure.deps.json
+C:\GitHub\TrazabilidadLogistica_BackEnd\Infrastructure\bin\Release\netcoreapp3.1\Infrastructure.runtimeconfig.json
+C:\GitHub\TrazabilidadLogistica_BackEnd\Infrastructure\bin\Release\netcoreapp3.1\Infrastructure.runtimeconfig.dev.json
+C:\GitHub\TrazabilidadLogistica_BackEnd\Infrastructure\bin\Release\netcoreapp3.1\Infrastructure.dll
+C:\GitHub\TrazabilidadLogistica_BackEnd\Infrastructure\bin\Release\netcoreapp3.1\Infrastructure.pdb
+C:\GitHub\TrazabilidadLogistica_BackEnd\Infrastructure\bin\Release\netcoreapp3.1\Core.dll
+C:\GitHub\TrazabilidadLogistica_BackEnd\Infrastructure\bin\Release\netcoreapp3.1\Core.pdb
+C:\GitHub\TrazabilidadLogistica_BackEnd\Infrastructure\obj\Release\netcoreapp3.1\Infrastructure.csproj.AssemblyReference.cache
+C:\GitHub\TrazabilidadLogistica_BackEnd\Infrastructure\obj\Release\netcoreapp3.1\Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\GitHub\TrazabilidadLogistica_BackEnd\Infrastructure\obj\Release\netcoreapp3.1\Infrastructure.AssemblyInfoInputs.cache
+C:\GitHub\TrazabilidadLogistica_BackEnd\Infrastructure\obj\Release\netcoreapp3.1\Infrastructure.AssemblyInfo.cs
+C:\GitHub\TrazabilidadLogistica_BackEnd\Infrastructure\obj\Release\netcoreapp3.1\Infrastructure.csproj.CoreCompileInputs.cache
+C:\GitHub\TrazabilidadLogistica_BackEnd\Infrastructure\obj\Release\netcoreapp3.1\Infrastructure.csproj.CopyComplete
+C:\GitHub\TrazabilidadLogistica_BackEnd\Infrastructure\obj\Release\netcoreapp3.1\Infrastructure.dll
+C:\GitHub\TrazabilidadLogistica_BackEnd\Infrastructure\obj\Release\netcoreapp3.1\Infrastructure.pdb
+C:\GitHub\TrazabilidadLogistica_BackEnd\Infrastructure\obj\Release\netcoreapp3.1\Infrastructure.genruntimeconfig.cache
