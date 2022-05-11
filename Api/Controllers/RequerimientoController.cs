@@ -26,7 +26,7 @@ namespace Api.Controllers
 
 
         [HttpPost("getRequerimientos")]
-        public async Task<IActionResult> getRequerimientos([FromForm]DateTime fecIni, [FromForm] DateTime fecFin, int empresa)
+        public async Task<IActionResult> getRequerimientos([FromForm]DateTime fecIni, [FromForm] DateTime fecFin, [FromForm]int empresa)
         {
             var requerimientos = await _requerimientoRepository.GetRequerimientos(fecIni, fecFin,empresa);
             return Ok(new { requerimientos = requerimientos });
@@ -47,7 +47,7 @@ namespace Api.Controllers
         }
 
         [HttpPost("getOrdenCompra")]
-        public async Task<IActionResult> getOrdenCompra([FromForm] DateTime fecIni, [FromForm] DateTime fecFin, int empresa)
+        public async Task<IActionResult> getOrdenCompra([FromForm] DateTime fecIni, [FromForm] DateTime fecFin, [FromForm] int empresa)
         {
             var ordenCompra = await _requerimientoRepository.getOrdenCompra(fecIni, fecFin, empresa);
             return Ok(new { ordenCompra = ordenCompra });
@@ -68,7 +68,7 @@ namespace Api.Controllers
         }
 
         [HttpPost("getPartesEntrada")]
-        public async Task<IActionResult> getPartesEntrada([FromForm] DateTime fecIni, [FromForm] DateTime fecFin, int empresa)
+        public async Task<IActionResult> getPartesEntrada([FromForm] DateTime fecIni, [FromForm] DateTime fecFin, [FromForm] int empresa)
         {
             var partesEntrada = await _requerimientoRepository.getPartesEntrada(fecIni, fecFin, empresa);
             return Ok(new { partesEntrada = partesEntrada });
