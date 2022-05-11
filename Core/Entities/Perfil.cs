@@ -4,9 +4,8 @@ using System.Text;
 
 namespace Core.Entities
 {
-    public class ParteEntrada
+    public class Perfil
     {
-        public string id { get; set; }
-        public int empresa { get; set; }
+
     }
 }

@@ -26,16 +26,16 @@ namespace Api.Controllers
 
 
         [HttpPost("getRequerimientos")]
-        public async Task<IActionResult> getRequerimientos([FromForm]DateTime fecIni, [FromForm] DateTime fecFin)
+        public async Task<IActionResult> getRequerimientos([FromForm]DateTime fecIni, [FromForm] DateTime fecFin, int empresa)
         {
-            var requerimientos = await _requerimientoRepository.GetRequerimientos(fecIni, fecFin);
+            var requerimientos = await _requerimientoRepository.GetRequerimientos(fecIni, fecFin,empresa);
             return Ok(new { requerimientos = requerimientos });
         }
 
         [HttpPost("getRequerimiento")]
         public async Task<IActionResult> getRequerimiento(Requerimiento req)
         {
-            var requerimiento = await _requerimientoRepository.GetRequerimiento(req.idReq);
+            var requerimiento = await _requerimientoRepository.GetRequerimiento(req.idReq, req.empresa);
             return Ok(new { requerimiento = requerimiento });
         }
 
@@ -47,16 +47,16 @@ namespace Api.Controllers
         }
 
         [HttpPost("getOrdenCompra")]
-        public async Task<IActionResult> getOrdenCompra([FromForm] DateTime fecIni, [FromForm] DateTime fecFin)
+        public async Task<IActionResult> getOrdenCompra([FromForm] DateTime fecIni, [FromForm] DateTime fecFin, int empresa)
         {
-            var ordenCompra = await _requerimientoRepository.getOrdenCompra(fecIni, fecFin);
+            var ordenCompra = await _requerimientoRepository.getOrdenCompra(fecIni, fecFin, empresa);
             return Ok(new { ordenCompra = ordenCompra });
         }
 
         [HttpPost("getOCompra")]
         public async Task<IActionResult> getOCompra([FromBody] Requerimiento requerimiento)
         {
-            var oCompra = await _requerimientoRepository.getOCompra(requerimiento.idReq);
+            var oCompra = await _requerimientoRepository.getOCompra(requerimiento.idReq, requerimiento.empresa);
             return Ok(new { oCompra = oCompra });
         }
 
@@ -68,16 +68,16 @@ namespace Api.Controllers
         }
 
         [HttpPost("getPartesEntrada")]
-        public async Task<IActionResult> getPartesEntrada([FromForm] DateTime fecIni, [FromForm] DateTime fecFin)
+        public async Task<IActionResult> getPartesEntrada([FromForm] DateTime fecIni, [FromForm] DateTime fecFin, int empresa)
         {
-            var partesEntrada = await _requerimientoRepository.getPartesEntrada(fecIni, fecFin);
+            var partesEntrada = await _requerimientoRepository.getPartesEntrada(fecIni, fecFin, empresa);
             return Ok(new { partesEntrada = partesEntrada });
         }
 
         [HttpPost("getParteEntrada")]
         public async Task<IActionResult> getParteEntrada([FromBody] Requerimiento requerimiento)
         {
-            var parteEntrada = await _requerimientoRepository.getParteEntrada(requerimiento.idReq);
+            var parteEntrada = await _requerimientoRepository.getParteEntrada(requerimiento.idReq,requerimiento.empresa);
             return Ok(new { parteEntrada = parteEntrada });
         }
 

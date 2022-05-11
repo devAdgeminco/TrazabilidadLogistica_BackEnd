@@ -32,6 +32,18 @@ namespace Infrastructure.Repositories
             using var connection = new SqlConnection(ConnectionString);
             return await connection.QueryAsync("usp_Usuario_Get", param: new { CodUsuario = CodUsuario }, commandType: CommandType.StoredProcedure);
         }
+        public async Task<IEnumerable<dynamic>> GetModulos(int CodUsuario)
+        {
+            using var connection = new SqlConnection(ConnectionString);
+            return await connection.QueryAsync("usp_ModuloUsuario", param: new { CodUsuario = CodUsuario }, commandType: CommandType.StoredProcedure);
+        }
+
+        public async Task<IEnumerable<dynamic>> GetPerfiles()
+        {
+            using var connection = new SqlConnection(ConnectionString);
+            return await connection.QueryAsync("usp_GetPerfiles", commandType: CommandType.StoredProcedure);
+        }
+
         public async Task<IEnumerable<dynamic>> InsertUser(string Login, string Nombres, string Apellidos, int CodEmpresa, string TipoUsuarioMa, string Clave, int CodUsuarioEvento)
         {
             using var connection = new SqlConnection(ConnectionString);

@@ -116,5 +116,35 @@ namespace Api.Controllers
                 throw;
             }
         }
+
+        [HttpPost("getModulos")]
+        public async Task<IActionResult> GetModulos([FromBody] User user)
+        {
+            try
+            {
+                var modulos = await _userRepository.GetModulos(user.CodUsuario);
+                return Ok(new { modulos = modulos });
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+                throw;
+            }
+        }
+
+        [HttpGet("getPerfiles")]
+        public async Task<IActionResult> GetPerfiles()
+        {
+            try
+            {
+                var perfiles = await _userRepository.GetPerfiles();
+                return Ok(new { perfiles = perfiles });
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+                throw;
+            }
+        }
     }
 }

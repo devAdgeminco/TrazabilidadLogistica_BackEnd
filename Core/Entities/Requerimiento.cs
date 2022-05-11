@@ -7,5 +7,6 @@ namespace Core.Entities
     public class Requerimiento
     {
         public string idReq { get; set; }
+        public int empresa { get; set; }
     }
 }
