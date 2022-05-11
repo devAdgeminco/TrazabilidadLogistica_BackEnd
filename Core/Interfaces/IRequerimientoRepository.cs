@@ -10,6 +10,7 @@ namespace Core.Interfaces
         Task<IEnumerable<dynamic>> GetRequerimientos(DateTime fecIni, DateTime fecFin, int empresa);
         Task<IEnumerable<dynamic>> GetRequerimiento(string nroreq, int empresa);
         Task<IEnumerable<dynamic>> GetRequerimientoDetalle(string idReq);
+        Task<IEnumerable<dynamic>> GetTrazabilidadDetalle(string idReq);
         Task<IEnumerable<dynamic>> getOrdenCompra(DateTime fecIni, DateTime fecFin, int empresa);
         Task<IEnumerable<dynamic>> getOCompra(string nroreq, int empresa);
         Task<IEnumerable<dynamic>> getOrdenCompraDetalle(string id);

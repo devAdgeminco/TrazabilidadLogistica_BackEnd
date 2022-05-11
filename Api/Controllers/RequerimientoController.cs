@@ -46,6 +46,13 @@ namespace Api.Controllers
             return Ok(new { requerimientoDetalle = requerimientoDetalle });
         }
 
+        [HttpPost("getTrazabilidadDetalle")]
+        public async Task<IActionResult> getTrazabilidadDetalle([FromBody] Requerimiento requerimiento)
+        {
+            var TrazabilidadDetalle = await _requerimientoRepository.GetTrazabilidadDetalle(requerimiento.idReq);
+            return Ok(new { TrazabilidadDetalle = TrazabilidadDetalle });
+        }
+
         [HttpPost("getOrdenCompra")]
         public async Task<IActionResult> getOrdenCompra([FromForm] DateTime fecIni, [FromForm] DateTime fecFin, [FromForm] int empresa)
         {
