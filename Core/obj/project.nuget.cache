@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "vr0uznOcFTepAAYvPzaCXsias3UVNZzWFx6NS090BohLVSdYzCSFoqznFRGjmzUiykWCVz33UV5Gim6JHDDbVA==",
+  "dgSpecHash": "2clknwjfyuk6lZiu9sngqEeNj4pklwupGGoh76Ls+OehF/SPC6KkJC4ZrGtP+/zTf4A+GVSKUfSXbiwb6GkXIg==",
   "success": true,
-  "projectFilePath": "E:\\Dev\\Adgeminco\\Trazabilidad Logistica\\BackEnd\\APIRestFull\\TrazabilidadLogistica_BackEnd\\Core\\Core.csproj",
+  "projectFilePath": "C:\\GitHub\\TrazabilidadLogistica_BackEnd\\Core\\Core.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
