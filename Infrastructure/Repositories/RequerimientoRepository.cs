@@ -36,7 +36,7 @@ namespace Infrastructure.Repositories
         public async Task<IEnumerable<dynamic>> GetTrazabilidadDetalle(string idReq)
         {
             using var connection = new SqlConnection(ConnectionString);
-            return await connection.QueryAsync("usp_GetRequerimientoDetalle", param: new { idReq = idReq }, commandType: CommandType.StoredProcedure);
+            return await connection.QueryAsync("usp_GetTrazabilidadDetalle", param: new { idReq = idReq }, commandType: CommandType.StoredProcedure);
         }
 
         public async Task<IEnumerable<dynamic>> getOrdenCompra(DateTime fecIni, DateTime fecFin, int empresa)
