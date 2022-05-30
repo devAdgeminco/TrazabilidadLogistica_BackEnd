@@ -1,4 +1,5 @@
-﻿using Core.Interfaces;
+﻿using Core.Entities;
+using Core.Interfaces;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
@@ -27,6 +28,13 @@ namespace Api.Controllers
         {
             var companies = await _companyRepository.GetCompanies();
             return Ok(new { company = companies });
+        }
+
+        [HttpPost("validarEmpresaOC")]
+        public async Task<IActionResult> ValidarEmpresaOC([FromBody] Company company)
+        {
+            var ordenes = await _companyRepository.ValidarEmpresaOC(company.Ruc);
+            return Ok(new { ordenes = ordenes });
         }
     }
 }

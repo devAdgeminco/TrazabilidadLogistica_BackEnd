@@ -23,5 +23,10 @@ namespace Infrastructure.Repositories
             using var connection = new SqlConnection(ConnectionString);
             return await connection.QueryAsync("sp_GetCompanies", commandType: CommandType.StoredProcedure);
         }
+        public async Task<IEnumerable<dynamic>> ValidarEmpresaOC(string ruc)
+        {
+            using var connection = new SqlConnection(ConnectionString);
+            return await connection.QueryAsync("usp_ValidarEmpresaOC", param: new { ruc = ruc }, commandType: CommandType.StoredProcedure);
+        }
     }
 }

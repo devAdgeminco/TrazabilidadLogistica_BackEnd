@@ -74,6 +74,20 @@ namespace Api.Controllers
             return Ok(new { ordenCompra = ordenCompra });
         }
 
+        [HttpPost("getOCDetalleAgenda")]
+        public async Task<IActionResult> getOCDetalleAgenda([FromBody] OrdenCompra oCompra)
+        {
+            var ordenCompra = await _requerimientoRepository.getOCDetalleAgenda(oCompra.idOrdenC,oCompra.ruc);
+            return Ok(new { ordenCompra = ordenCompra });
+        }
+
+        [HttpPost("getAgenda")]
+        public async Task<IActionResult> getAgenda([FromBody] OrdenCompra oCompra)
+        {
+            var agenda = await _requerimientoRepository.getAgenda(oCompra.idOrdenC);
+            return Ok(new { agenda = agenda });
+        }
+
         [HttpPost("getPartesEntrada")]
         public async Task<IActionResult> getPartesEntrada([FromForm] DateTime fecIni, [FromForm] DateTime fecFin, [FromForm] int empresa)
         {

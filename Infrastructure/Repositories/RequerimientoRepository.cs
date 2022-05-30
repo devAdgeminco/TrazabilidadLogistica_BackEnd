@@ -13,9 +13,11 @@ namespace Infrastructure.Repositories
     public class RequerimientoRepository:IRequerimientoRepository
     {
         private readonly string ConnectionString;
+        private readonly string ConnectionString2;
         public RequerimientoRepository(IConfiguration configuration)
         {
             ConnectionString = ConfigurationExtensions.GetConnectionString(configuration, "BDADGintegra");
+            ConnectionString2 = ConfigurationExtensions.GetConnectionString(configuration, "BDAgenda");
         }
 
         public async Task<IEnumerable<dynamic>> GetRequerimientos(DateTime fecIni, DateTime fecFin, int empresa)
@@ -55,6 +57,18 @@ namespace Infrastructure.Repositories
         {
             using var connection = new SqlConnection(ConnectionString);
             return await connection.QueryAsync("usp_GetOrdenCompraDetalle", param: new { id = id }, commandType: CommandType.StoredProcedure);
+        }
+
+        public async Task<IEnumerable<dynamic>> getAgenda(string nroOrden)
+        {
+            using var connection = new SqlConnection(ConnectionString2);
+            return await connection.QueryAsync("usp_GetAgenda", param: new { nroOrden = nroOrden }, commandType: CommandType.StoredProcedure);
+        }
+
+        public async Task<IEnumerable<dynamic>> getOCDetalleAgenda(string idOrdenC, string ruc)
+        {
+            using var connection = new SqlConnection(ConnectionString);
+            return await connection.QueryAsync("usp_GetOCDetalleAgenda", param: new { idOrdenC = idOrdenC, ruc = ruc }, commandType: CommandType.StoredProcedure);
         }
 
         public async Task<IEnumerable<dynamic>> getPartesEntrada(DateTime fecIni, DateTime fecFin, int empresa)

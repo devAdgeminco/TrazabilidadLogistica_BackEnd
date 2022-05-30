@@ -42,6 +42,20 @@ namespace Api.Controllers
             return Ok(new { login = users, token = token });
         }
 
+        [HttpPost("loginAgenda")]
+        public async Task<IActionResult> LoginAgenda([FromForm] string usuario)
+        {
+            var users = await _userRepository.GetUserAgenda(usuario);
+
+            var token = "";
+            if (users != null)
+            {
+                var key = _configuration["jwt:key"];
+                token = TokenGenerator.getToken(key, usuario);
+            }
+            return Ok(new { login = users, token = token });
+        }
+
         //[Authorize]
         [HttpGet("users")]
         public async Task<IActionResult> GetUsers()
@@ -56,6 +70,12 @@ namespace Api.Controllers
             var users = await _userRepository.GetUserForm(user.CodUsuario);
             return Ok(new { users = users });
         }
+        [HttpGet("usersAgenda")]
+        public async Task<IActionResult> GetUsersAgenda()
+        {
+            var users = await _userRepository.GetUsersAgenda();
+            return Ok(new { users = users });
+        }
 
         [HttpPost("insertUser")]
         public async Task<IActionResult> InsertUser([FromBody] User user)
@@ -63,6 +83,21 @@ namespace Api.Controllers
             try
             {
                 var users = await _userRepository.InsertUser(user.Login, user.Nombres, user.Apellidos, user.CodEmpresa, user.TipoUsuarioMa, user.Clave, user.CodUsuarioActualizacion);
+                return Ok(true);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+                throw;
+            }
+        }
+
+        [HttpPost("insertUserAgenda")]
+        public async Task<IActionResult> InsertUserAgenda([FromBody] UserAgenda user)
+        {
+            try
+            {
+                var users = await _userRepository.InsertUserAgenda(user.usuario, user.clave, user.nombres, user.apellidos, user.rucEmpresa, user.email);
                 return Ok(true);
             }
             catch (Exception ex)
