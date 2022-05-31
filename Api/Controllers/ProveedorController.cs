@@ -22,7 +22,7 @@ namespace Api.Controllers
         [HttpPost("InsertAgenda")]
         public async Task<IActionResult> InsertAgenda([FromBody] Agenda proveedor)
         {
-            var agenda = await _proveedorRepository.InsertAgendaDate(proveedor.id,proveedor.orden,proveedor.fechaAgenda);
+            var agenda = await _proveedorRepository.InsertAgendaDate(proveedor.id,proveedor.orden,proveedor.RucProv,proveedor.RazonSocial,proveedor.DetalleOC,proveedor.fechaAgenda);
             return Ok(new { agenda = agenda });
         }
 

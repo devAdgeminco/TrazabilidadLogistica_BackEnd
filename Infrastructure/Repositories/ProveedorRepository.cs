@@ -21,10 +21,10 @@ namespace Infrastructure.Repositories
             ConnectionString2 = ConfigurationExtensions.GetConnectionString(configuration, "BDADGintegra");
         }
 
-        public async Task<IEnumerable<dynamic>> InsertAgendaDate(int id, string orden, string fechaAgenda)
+        public async Task<IEnumerable<dynamic>> InsertAgendaDate(int id, string orden, string RucProv, string RazonSocial, string DetalleOC, string fechaAgenda)
         {
             using var connection = new SqlConnection(ConnectionString);
-            return await connection.QueryAsync("usp_InsertAgendaDate", param: new { id = id, orden = orden, fechaAgenda = fechaAgenda }, commandType: CommandType.StoredProcedure);
+            return await connection.QueryAsync("usp_InsertAgendaDate", param: new { id = id, orden = orden, RucProv = RucProv, RazonSocial = RazonSocial, DetalleOC = DetalleOC, fechaAgenda = fechaAgenda   }, commandType: CommandType.StoredProcedure);
         }
 
         public async Task<IEnumerable<dynamic>> InsertAgendaDetalle(int idAgenda, string codProducto, decimal cantidad)

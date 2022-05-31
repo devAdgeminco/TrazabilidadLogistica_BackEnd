@@ -7,7 +7,7 @@ namespace Core.Interfaces
 {
     public interface IProveedorRepository
     {
-        Task<IEnumerable<dynamic>> InsertAgendaDate(int id, string orden, string fechaAgenda);
+        Task<IEnumerable<dynamic>> InsertAgendaDate(int id, string orden,string RucProv, string RazonSocial, string DetalleOC, string fechaAgenda);
         Task<IEnumerable<dynamic>> InsertAgendaDetalle(int idAgenda, string codProducto, decimal cantidad);
         Task<IEnumerable<dynamic>> GetAgendaAll();
         Task<IEnumerable<dynamic>> GetAgendaDetalle(int id);
