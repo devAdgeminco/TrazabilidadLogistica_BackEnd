@@ -9,6 +9,8 @@ namespace Core.Interfaces
     {
         Task<IEnumerable<dynamic>> InsertAgendaDate(int id, string orden, string fechaAgenda);
         Task<IEnumerable<dynamic>> InsertAgendaDetalle(int idAgenda, string codProducto, decimal cantidad);
-
+        Task<IEnumerable<dynamic>> GetAgendaAll();
+        Task<IEnumerable<dynamic>> GetAgendaDetalle(int id);
+        Task<IEnumerable<dynamic>> SetAprobacionAgenda(int id, bool value);
     }
 }

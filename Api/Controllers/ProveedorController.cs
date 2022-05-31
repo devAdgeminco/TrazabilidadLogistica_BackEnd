@@ -32,5 +32,26 @@ namespace Api.Controllers
             var a = await _proveedorRepository.InsertAgendaDetalle(agenda.idAgenda, agenda.codProducto, agenda.cantidad);
             return Ok(new { agenda = a });
         }
+        
+        [HttpGet("getAgendaAll")]
+        public async Task<IActionResult> getAgendaAll()
+        {
+            var a = await _proveedorRepository.GetAgendaAll();
+            return Ok(new { agenda = a });
+        }
+
+        [HttpPost("getAgendaDetalle")]
+        public async Task<IActionResult> getAgendaDetalle([FromBody] Agenda agenda)
+        {
+            var detalle = await _proveedorRepository.GetAgendaDetalle(agenda.id);
+            return Ok(new { agendaDetalle = detalle });
+        }
+
+        [HttpPost("setAprobacionAgenda")]
+        public async Task<IActionResult> setAprobacionAgenda([FromBody] Agenda agenda)
+        {
+            var detalle = await _proveedorRepository.SetAprobacionAgenda(agenda.id, agenda.Aprobacion);
+            return Ok(new { agendaDetalle = detalle });
+        }
     }
 }
