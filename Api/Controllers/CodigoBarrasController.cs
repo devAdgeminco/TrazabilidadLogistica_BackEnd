@@ -28,11 +28,25 @@ namespace Api.Controllers
             return Ok(new { codigoBarrasOC = codigoBarrasOC });
         }
 
-        [HttpPost("getBarraCodigoOCD")]
-        public async Task<IActionResult> getBarraCodigoOCD(Requerimiento req)
+        [HttpGet("selectCodigoBarrasTMP")]
+        public async Task<IActionResult> selectCodigoBarrasTMP()
         {
-            var codigoBarrasOCD = await _codigoBarrasRepository.GetBarraCodigoOCD(req.idReq, req.empresa);
-            return Ok(new { codigoBarrasOCD = codigoBarrasOCD });
+            var codigoBarras = await _codigoBarrasRepository.SelectCodigoBarrasTMP();
+            return Ok(new { codigoBarras = codigoBarras });
+        }
+
+        [HttpPost("insertCodigoBarrasTMP")]
+        public async Task<IActionResult> insertCodigoBarrasTMP(CodigoBarras barcode)
+        {
+            var codigoBarras = await _codigoBarrasRepository.InsertCodigoBarrasTMP(barcode.codigo, barcode.descripcion, barcode.almacen);
+            return Ok(new { codigoBarras = codigoBarras });
+        }
+
+        [HttpDelete("deleteCodigoBarrasTMP")]
+        public async Task<IActionResult> deleteCodigoBarrasTMP(CodigoBarras barcode)
+        {
+            var codigoBarras = await _codigoBarrasRepository.DeleteCodigoBarrasTMP();
+            return Ok(new { codigoBarras = codigoBarras });
         }
     }
 }

@@ -28,5 +28,20 @@ namespace Infrastructure.Repositories
             using var connection = new SqlConnection(ConnectionString);
             return await connection.QueryAsync("usp_GetCodigoBarraOCD", param: new { codigo = codigo, empresa = empresa }, commandType: CommandType.StoredProcedure);
         }
+        public async Task<IEnumerable<dynamic>> InsertCodigoBarrasTMP(string codigo, string descripcion,string almacen)
+        {
+            using var connection = new SqlConnection(ConnectionString);
+            return await connection.QueryAsync("usp_InsertCodigoBarrasTMP", param: new { codigo = codigo, descripcion = descripcion, almacen = almacen }, commandType: CommandType.StoredProcedure);
+        }
+        public async Task<IEnumerable<dynamic>> SelectCodigoBarrasTMP()
+        {
+            using var connection = new SqlConnection(ConnectionString);
+            return await connection.QueryAsync("usp_SelectCodigoBarrasTMP", commandType: CommandType.StoredProcedure);
+        }
+        public async Task<IEnumerable<dynamic>> DeleteCodigoBarrasTMP()
+        {
+            using var connection = new SqlConnection(ConnectionString);
+            return await connection.QueryAsync("usp_DeleteCodigoBarrasTMP", commandType: CommandType.StoredProcedure);
+        }
     }
 }
