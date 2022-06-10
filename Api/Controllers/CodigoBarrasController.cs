@@ -28,6 +28,13 @@ namespace Api.Controllers
             return Ok(new { codigoBarrasOC = codigoBarrasOC });
         }
 
+        [HttpPost("getBarraCodigoOCD")]
+        public async Task<IActionResult> GetBarraCodigoOCD(Requerimiento req)
+        {
+            var codigoBarrasOCD = await _codigoBarrasRepository.GetBarraCodigoOCD(req.idReq, req.empresa);
+            return Ok(new { codigoBarrasOCD = codigoBarrasOCD });
+        }
+
         [HttpGet("selectCodigoBarrasTMP")]
         public async Task<IActionResult> selectCodigoBarrasTMP()
         {
